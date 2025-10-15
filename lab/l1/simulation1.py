@@ -39,7 +39,7 @@ ax.set_xlim((-1, 1)) # limite la axe
 ax.set_ylim((-1, 1))
 
 # pentru fiecare patch este o buna practica sa avem cate o functie separtata
-samples = 10
+samples = 10000
 
 for _ in range(samples):
     draw_random_segment(ax)
@@ -48,4 +48,4 @@ draw_circle_and_triangle(ax)
 print("Probability: ", total_larger_lines / total_lines)
 # Display the plot
 plt.title('Circle and Triangle')
-plt.show()
+plt.savefig('./img/probability1.svg')
